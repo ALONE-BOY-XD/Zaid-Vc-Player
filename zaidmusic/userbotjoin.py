@@ -27,7 +27,7 @@ async def addchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "🤖: ᴢᴀɪᴅ ᴠᴄ ᴄʜᴀᴛ ʜᴇʟᴘᴇʀ ᴊᴏɪɴᴇᴅ ɪɴ ᴜʀ ᴄʜᴀᴛ ᴛᴏ ᴘʟᴀʏ ꜱᴏɴɢ ɪɴ ᴠᴄ")
+        await USER.send_message(message.chat.id, "🤖: ꜱʏʟᴠɪᴀ VC CHAT HELPEƦ JOꞮNED ꞮN UƦ CHAT TO PLAY SONG ꞮN VC")
     except UserAlreadyParticipant:
         await message.reply_text(
             "<b>helper already in your chat</b>",
@@ -36,7 +36,7 @@ async def addchannel(client, message):
         print(e)
         await message.reply_text(
             f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your group due to heavy join requests for userbot! Make sure user is not banned in group for more info contact @Zaid_Support."
-            "\n\nOr manually add Asisstant to your Group and try again</b>",
+            "\n\nOr manually add Asisstant @SYLVIA_ASSISTANT to your Group and try again</b>",
         )
         return
     await message.reply_text(
